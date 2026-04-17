@@ -26,7 +26,36 @@ nav a:hover {
   color: #00c3ff;
 }
 
-/* SECCIÓN PROYECTOS */
+/* ===== INICIO ===== */
+.inicio {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* TARJETA (reutiliza la misma estética) */
+.descripcion .tarjeta {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+/* PROYECTOS (lo que ya tenías) */
 .proyectos {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +70,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* TARJETAS */
+/* TARJETAS PROYECTOS */
 .tarjeta {
   background: white;
   padding: 20px;
@@ -62,6 +91,10 @@ nav a:hover {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .tarjeta {
+    width: 90%;
+  }
+
+  .descripcion .tarjeta {
     width: 90%;
   }
 }

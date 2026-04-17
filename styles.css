@@ -112,7 +112,26 @@ nav a:hover {
 }
 
 
+/* CONTACTO */
+.contacto {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
 
+.contacto h2 {
+  margin-bottom: 20px;
+}
+
+.contacto a {
+  color: #00c3ff;
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
 
 
 

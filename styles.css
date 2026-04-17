@@ -1,24 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
+/* NAV */
 header {
-    background: #222;
-    padding: 15px;
+  background: #222;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #00c3ff;
+  color: #00c3ff;
 }
 
-main {
-    padding: 40px;
+/* SECCIÓN PROYECTOS */
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.proyectos h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 90%;
+  }
 }

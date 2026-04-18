@@ -60,19 +60,34 @@ nav a:hover {
 /* PROYECTOS */
 .proyectos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column; 
+  align-items: center;
   padding: 40px 20px;
 }
 
-.proyectos h2 {
+.proyectos h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* .proyectos h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
-}
+} */
 
 /* TARJETAS PROYECTOS */
+
+/* nuevo contenedor SOLO para tarjetas */
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
 .tarjeta {
   background: white;
   padding: 20px;

@@ -2,6 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 /* NAV */
@@ -26,15 +34,10 @@ nav a:hover {
   color: #00c3ff;
 }
 
-/* ===== INICIO ===== */
+/* INICIO */
 .inicio {
   padding: 40px 20px;
   text-align: center;
-}
-
-/* HERO */
-.hero h1 {
-  margin-bottom: 10px;
 }
 
 .subtitulo {
@@ -43,19 +46,18 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-/* TARJETA (reutiliza la misma estética) */
-.descripcion .tarjeta {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  line-height: 1.6;
+/* TEXTO */
+.texto {
+  text-align: center;
+  line-height: 1.7;
+  color: #333;
 }
 
-/* PROYECTOS (lo que ya tenías) */
+.texto p {
+  margin-bottom: 15px;
+}
+
+/* PROYECTOS */
 .proyectos {
   display: flex;
   flex-wrap: wrap;
@@ -84,33 +86,15 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
-.tarjeta h3 {
-  margin-top: 0;
+/* TARJETA INICIO */
+.descripcion .tarjeta {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 25px;
+  line-height: 1.6;
 }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .tarjeta {
-    width: 90%;
-  }
-
-  .descripcion .tarjeta {
-    width: 90%;
-  }
-}
-
-/* texto del cuerpo */
-.texto {
-  text-align: center;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* separación entre párrafos */
-.texto p {
-  margin-bottom: 15px;
-}
-
 
 /* CONTACTO */
 .contacto {
@@ -120,20 +104,11 @@ nav a:hover {
   text-align: center;
 }
 
-.contacto h2 {
-  margin-bottom: 20px;
-}
-
 .contacto a {
   color: #00c3ff;
   text-decoration: none;
+  transition: 0.3s;
 }
-
-.contacto a:hover {
-  text-decoration: underline;
-}
-
-
 
 /* FOOTER */
 footer {
@@ -142,4 +117,11 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 90%;
+  }
 }
